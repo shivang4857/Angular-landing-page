@@ -1,7 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+
 @import "tailwindcss";
 
-/* Global Dark Theme - ChatGPT-Like */
 :root {
     --background-color: #1e1e1e; /* ChatGPT Dark */
     --text-color: #ffffff; /* White text */
@@ -9,82 +8,18 @@
     
   }
   
-  /* Apply styles to body */
+
 
 
   
   body {
     background-color: #1e1e1e;
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    margin: 40px;
-    margin-top: 2px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
     padding: 0;
   }
   
-  /* Tablets */
-@media (max-width: 768px) {
-  .container {
-    padding: 0 10px;
-  }
-
-  .beat-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .beat-info {
-    flex-direction: column;
-  }
-
-  button {
-    width: 100%;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .beat-item {
-    padding: 8px;
-  }
-
-  .play-btn {
-    width: 30px;
-    height: 30px;
-  }
-
-  h1, h2, h3 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-}
-
-
-
-/* Webkit-based browsers (Chrome, Edge, Safari) */
-::-webkit-scrollbar {
-  width: 8px;  /* Scrollbar width */
-}
-
-/* Scrollbar Track */
-::-webkit-scrollbar-track {
-  background: #121212;  /* Dark background */
-}
-
-/* Scrollbar Thumb */
-::-webkit-scrollbar-thumb {
-  background: #1e1e1e;  /* Changes scrollbar color */
-  border-radius: 4px;  /* Smooth rounded edges */
-}
-
-/* Scrollbar Thumb on Hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #333333;  /* Slightly lighter when hovered */
-}
-
+ 
   
   
