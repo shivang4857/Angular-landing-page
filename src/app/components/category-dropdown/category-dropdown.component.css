@@ -1,0 +1,81 @@
+.category-container {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 16px;
+}
+
+.category-tabs {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+}
+
+.category-tabs button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+
+.category-tabs button.active {
+    border-bottom: 2px solid white;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: linear-gradient(to right, rgba(68, 68, 68, 0), #444, rgba(68, 68, 68, 0));
+    margin: 8px 0;
+}
+
+/* Beats Dropdown */
+.beats-dropdown {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+}
+
+.beats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.beat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.beat-icon {
+    color: #b47bff;
+    font-size: 20px;
+}
+
+.beat-name {
+    font-size: 16px;
+}
+
+.beat-item:hover .beat-name {
+    color: #a0a0a0;
+}
+
+/* Genres Dropdown */
+.genres-dropdown {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.genre-item {
+    text-align: center;
+}
+
+.genre-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}

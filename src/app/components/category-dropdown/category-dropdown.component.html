@@ -1,0 +1,32 @@
+<div class="category-container">
+    <!-- Horizontal Line -->
+    <hr />
+  
+    <!-- Beats and Genres Toggle -->
+    <div class="category-tabs">
+      <button (click)="toggleBeats()" [class.active]="showBeats">BEATS</button>
+      <button (click)="toggleGenres()" [class.active]="showGenres">GENRES</button>
+    </div>
+  
+    <!-- Beats Dropdown -->
+    <div *ngIf="showBeats" class="dropdown-content beats-dropdown">
+      <div class="beats-grid">
+        <div *ngFor="let beat of beatsList" class="beat-item">
+          <span class="beat-icon">{{ beat.icon }}</span>
+          <span class="beat-name">{{ beat.name }}</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Genres Dropdown -->
+    <div *ngIf="showGenres" class="dropdown-content genres-dropdown">
+      <div *ngFor="let genre of genresList" class="genre-item">
+        <img [src]="genre.img" [alt]="genre.name" class="genre-image" />
+        <p>{{ genre.name }}</p>
+      </div>
+    </div>
+  
+    <!-- Horizontal Line -->
+    <hr />
+  </div>
+  

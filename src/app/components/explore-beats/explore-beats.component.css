@@ -1,0 +1,42 @@
+.explore-beats-container {
+    display: flex;
+    justify-content: space-between; /* Push items to opposite ends */
+    align-items: center;
+    padding: 20px;
+    background-color: transparent; /* Transparent background */
+    width: 100%; /* Ensure the container takes full width */
+  }
+  
+  .explore-beats {
+    display: flex;
+    align-items: center;
+  }
+  
+  .explore-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .explore-text .explore {
+    color: white; /* "Explore" in white */
+  }
+  
+  .explore-text .beats {
+    color: #a098ff; /* "Beats" in purple */
+  }
+  
+  .refresh-button {
+    background-color: transparent; /* Transparent background */
+    color: #d49cff; /* Purple text */
+    border: 2px solid #d49cff; /* Purple border */
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .refresh-button:hover {
+    background-color: purple; /* Purple background on hover */
+    color: white; /* White text on hover */
+  }

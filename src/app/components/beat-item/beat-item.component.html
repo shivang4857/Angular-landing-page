@@ -1,0 +1,31 @@
+<div class="beat-item">
+    <div class="beat-info">
+      <div class="play-btn">
+        <div class="triangle-icon"></div>
+    </div>
+      <img [src]="beat.cover_picture || 'assets/default-beat.jpg'" 
+           alt="Beat Cover" 
+           class="beat-image">
+      <div class="beat-details">
+        <h3>{{ beat.title || 'Untitled Beat' }}</h3>
+        <p>
+          {{ beat.producer?.store?.general?.name || 'Unknown Producer' }} 
+          <span class="bpm">
+            <img src="beat-play.png" alt="BPM Icon" class="bpm-icon">
+            {{ beat.tempo || 'N/A' }} BPM</span> 
+          <span class="key">
+            <img src="audio-icon.png" alt="Key Icon" class="key-icon">
+            {{ formatKey(beat.key) }}</span>
+        </p>
+      </div>
+    </div>
+  
+    <div class="beat-actions">
+      
+      <button class="price-btn">
+        <!-- //<img src="cart2.png" alt="Cart Icon" class="cart-icon">  -->
+        ₹{{ getLowestPrice(beat.prices) }}
+      </button>
+    </div>
+  </div>
+  
