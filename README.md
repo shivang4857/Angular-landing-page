@@ -1,59 +1,73 @@
-# BeatsMarketplace
+# Angular Landing Page
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
+A modern and responsive landing page built with Angular, designed for seamless performance and a great user experience.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- Responsive design for mobile & desktop
+- Built with Angular for fast performance
+- Modular and scalable component structure
+- Easy customization and theming
 
-```bash
-ng serve
+## 📌 Technologies Used
+
+- **Angular** - Frontend framework
+- **TypeScript** - Strongly typed JavaScript
+- **HTML & CSS** - For styling and layout
+- **Bootstrap/Tailwind**- Responsive UI components
+
+## 📂 Folder Structure
+
+```
+angular-landing-page/
+│── src/
+│   ├── app/
+│   │   ├── components/      # Reusable UI components
+│   │   ├── pages/           # Page-specific components
+│   │   ├── app.module.ts    # Main module
+│   ├── assets/              # Static assets (images, icons, etc.)
+│   ├── styles.css           # Global styles
+│── angular.json             # Angular configuration
+│── package.json             # Dependencies and scripts
+│── README.md                # Documentation
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📦 Installation & Setup
 
-## Code scaffolding
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/shivang4857/Angular-landing-page.git
+   cd Angular-landing-page
+   ```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+2. **Install Dependencies**
+   ```sh
+   npm install
+   ```
 
-```bash
-ng generate component component-name
-```
+3. **Run the Development Server**
+   ```sh
+   ng serve
+   ```
+   - The app will be available at `http://localhost:4200/`
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📌 Deployment
 
-```bash
-ng generate --help
-```
+To build the project for production, run:
+```sh
+ng build 
+This will generate optimized files in the `dist/beats-marketplace` directory.
 
-## Building
+## 🤝 Contributing
 
-To build the project run:
+Contributions are welcome! If you find any bugs or have feature requests, please open an issue or submit a pull request.
 
-```bash
-ng build
-```
+## 📄 License
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This project is licensed under the **MIT License**.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### ✨ Show Your Support
+If you like this project, don't forget to ⭐ the repository!
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
