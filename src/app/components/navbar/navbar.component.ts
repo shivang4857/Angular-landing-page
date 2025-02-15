@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SearchService } from '../../services/search.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-navbar',
@@ -17,7 +19,7 @@ import { CommonModule } from '@angular/common';
             type="text" 
             placeholder="Search top beats" 
             class="bg-transparent text-white placeholder-gray-400 p-2 pl-4 pr-20 rounded-md outline-none w-60"
-          />
+                 />
           
           <!-- Dropdown -->
           <button 
@@ -58,6 +60,9 @@ import { CommonModule } from '@angular/common';
 export class NavbarComponent {
   dropdownOpen = false;
   selectedCategory = 'General';
+  searchText = '';
+
+  constructor(private searchService: SearchService) {}
 
   toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;
@@ -66,5 +71,11 @@ export class NavbarComponent {
   selectCategory(category: string) {
     this.selectedCategory = category;
     this.dropdownOpen = false;
+  }
+
+  onSearchChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.searchText = target.value;
+    this.searchService.setSearchQuery(this.searchText);
   }
 }
