@@ -1,20 +1,22 @@
 .category-container {
     background-color: #1e1e1e;
     color: white;
-    padding: 16px;
+    padding: 16px;  
+    
 }
 
 .category-tabs {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: start;
 }
 
 .category-tabs button {
     background: none;
     border: none;
+    
     color: white;
-    font-size: 16px;
+    font-size: 14.5px;
     cursor: pointer;
     padding-bottom: 4px;
 }

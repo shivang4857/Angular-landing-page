@@ -15,11 +15,12 @@ import { FormsModule } from '@angular/forms';
 
         <!-- Search Bar -->
         <div class="relative flex items-center border border-gray-500 rounded-md bg-[#2e2e2e] px-8">
-          <input 
-            type="text" 
-            placeholder="Search top beats" 
-            class="bg-transparent text-white placeholder-gray-400 p-2 pl-4 pr-20 rounded-md outline-none w-60"
-                 />
+       <input 
+        type="text" 
+  placeholder="Search top beats" 
+  class="bg-transparent text-white placeholder-gray-400 p-2 pl-0 pr-20 rounded-md outline-none w-60"
+/>
+
           
           <!-- Dropdown -->
           <button 
@@ -46,16 +47,30 @@ import { FormsModule } from '@angular/forms';
 
       <!-- Buttons -->
       <div class="flex items-center gap-4">
-       <button style="background: transparent;" class="text-white px-4 py-2 font-bold hover:underline transition duration-200">
+       <button style="background: transparent;" class="text-white px-4 py-2  ">
+  Start Selling
+</button>
+             <button style="background: transparent;" class="text-white px-4 py-2  ">
   Sign In
 </button>
-        <button class="bg-gradient-to-r from-purple-500 to-purple-700 px-2 py-2 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105 font-bold">
-          Start Selling
-        </button>
+
+<button class="relative text-white px-6 py-2 rounded-full border border-white/35 overflow-hidden 
+               before:absolute before:left-0 before:top-0 before:h-full before:w-1/3 before:border-l-2 before:border-white/50 before:blur-sm">
+  Sign Up
+</button>
+
+
+
+
+
+
+
       </div>
     </nav>
   `,
-  styles: [],
+  styles: [
+    
+  ],
 })
 export class NavbarComponent {
   dropdownOpen = false;

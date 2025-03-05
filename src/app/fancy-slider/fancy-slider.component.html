@@ -1,0 +1,19 @@
+<div class="slider-container">
+    <!-- Prev Button -->
+    <button (click)="prev()" class="nav-button"> > </button>
+    
+    <div class="slider">
+      <!-- Loop over images -->
+      <div
+        class="slide"
+        *ngFor="let image of images; let i = index"
+        [ngClass]="positionClass(i)"
+      >
+        <img [src]="image" alt="Slide {{ i }}" />
+      </div>
+    </div>
+  
+    <!-- Next Button -->
+    <button (click)="next()" class="nav-button">&#10095;</button>
+  </div>
+  
